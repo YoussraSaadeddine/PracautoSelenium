@@ -1,5 +1,6 @@
 package DefinitionSteps;
 
+
 import org.openqa.selenium.WebDriver;
 
 import Pages.LoginPage;
@@ -15,7 +16,8 @@ public class LoginSteps {
 	@Given("User in login page")
 	public void user_in_login_page() {
 	    // Write code here that turns the phrase above into concrete actions
-		driver.get("https://practice.automationtesting.in/my-account/");
+		login = new LoginPage(driver);
+		login.getUrl();
 	    System.out.println("I am in login Page");
 	}
 
@@ -34,5 +36,9 @@ public class LoginSteps {
 	@Then("Dashbord page should appear")
 	public void dashbord_page_should_appear() {
 	    login.verify_dashboard();
+	}
+	@Then("error message should appear")
+	public void error_message_should_appear() {
+	    login.verify_error();
 	}
 }

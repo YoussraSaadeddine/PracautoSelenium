@@ -18,8 +18,7 @@ public class SetUp {
 	}
 	
 	
-	@After
-	public void teardown() {
-		driver.quit();
-	}
+	/*
+	 * @After public void teardown() { driver.quit(); }
+	 */
 }
