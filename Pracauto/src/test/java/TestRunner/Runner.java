@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Features/compte.feature",glue= {"DefinitionSteps"},tags="@passInvalid")
+@CucumberOptions(features="src/test/resources/Features/shop.feature",glue= {"DefinitionSteps"},tags="@price")
 
 public class Runner {
 	
